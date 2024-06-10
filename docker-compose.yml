@@ -1,0 +1,18 @@
+version: "3"
+services:
+    server:
+     image: yandex/clickhouse-server
+     ports:
+     - "8123:8123"
+     - "9000:9000"
+     - "9009:9009"
+     environment:
+      - CLICKHOUSE_USER=usr
+      - CLICKHOUSE_PASSWORD=passwd
+     networks:
+      - mynetwork
+
+
+
+networks:
+  mynetwork:

@@ -8,7 +8,7 @@ CREATE TABLE source (
 ) ENGINE Memory;
 ```
 
-В строкак - JSON-записи 2 видв:
+В строках - JSON-записи 2 видв:
 - Счетчики: `'{"type":"counter","id":"incremental","value":10}'`
 - Записи о тратах:`{"category":"other","type":"payment","index":1,"id":"payment1","money":400,"date":"2021-01-01","purpose":"просто так"}`
 
